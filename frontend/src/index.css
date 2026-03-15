@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add any custom global styles here */
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc; /* A light grey background for the app */
+  color: #1e293b; /* slate-800 */
+}
+
+/* Custom class for centering content */
+.content-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom button component styles */
+.btn {
+    @apply font-bold py-2 px-4 rounded-lg transition-transform transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+    @apply btn bg-teal-600 text-white hover:bg-teal-700 focus:ring-teal-500;
+}
+
+.btn-secondary {
+    @apply btn bg-slate-200 text-slate-800 hover:bg-slate-300 focus:ring-slate-400;
+}
+
+.btn-danger {
+    @apply btn bg-rose-600 text-white hover:bg-rose-700 focus:ring-rose-500;
+}
+
+/* Custom form input styles */
+.form-input {
+    @apply w-full px-4 py-2 mt-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent;
+}
